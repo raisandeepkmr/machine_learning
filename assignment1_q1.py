@@ -1,3 +1,4 @@
+
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 print("The list: ")
 print(ages)
@@ -17,11 +18,11 @@ if(len(ages)%2==0):
     middleIndex = len(ages)/2
     oneMidAge = ages[middleIndex]
     twoMidAge = ages[middleIndex+1]
-    medianAge = oneMidAge + twoMidAge;
+    medianAge = (oneMidAge + twoMidAge)/2;
 else:
     middleIndex = (len(ages)+1)/2
     medianAge = ages[middleIndex]
-print("Median age: " + str(medianAge/2))
+print("Median age: " + str(medianAge))
 ageSum = 0
 for x in ages:
     ageSum += x
